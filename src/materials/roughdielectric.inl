@@ -101,7 +101,7 @@ Real pdf_sample_bsdf_op::operator()(const RoughDielectric &bsdf) const {
     Real roughness = eval(
         bsdf.roughness, vertex.uv, vertex.uv_screen_size, texture_pool);
     // Clamp roughness to avoid numerical issues.
-    roughness = std::clamp(roughness, Real(0.01), Real(1));
+    roughness = std::clamp(roughness, Real(0.01), Real(1)); 
 
     // We sample the visible normals, also we use F to determine
     // whether to sample reflection or refraction

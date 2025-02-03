@@ -7,7 +7,7 @@ Spectrum vol_path_tracing_1(const Scene &scene,
                             int x, int y, /* pixel coordinates */
                             pcg32_state &rng) {
     // Homework 2: implememt this!
-    return make_zero_spectrum();
+    
 }
 
 // The second simplest volumetric renderer: 
